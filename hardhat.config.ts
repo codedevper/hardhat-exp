@@ -3,6 +3,12 @@ import { configVariable, defineConfig } from "hardhat/config";
 
 export default defineConfig({
   plugins: [hardhatToolboxViemPlugin],
+  paths: {
+    sources: "./contracts",
+    tests: "./tests",
+    cache: "./storage/framework/cache",
+    artifacts: "./types/artifacts",
+  },
   solidity: {
     profiles: {
       default: {
